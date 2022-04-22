@@ -1,0 +1,7 @@
+.body {
+    border: 1px solid yellowgreen;
+    flex: 0.8;
+    background-color: blanchedalmond;
+    background: linear-gradient
+    (rgb(59, 214, 66), rgba(0, 0, 1));
+}

@@ -1,14 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { Provider } from 'react-redux'
+import store from './store'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { DataLayer } from './DataLayer'
+import { initialState } from './store/reducer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <DataLayer initialState={initialState} reducer>
+      <App />
+    </DataLayer>
+    
   </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
